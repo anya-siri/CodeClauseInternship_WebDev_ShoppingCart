@@ -1,6 +1,6 @@
 # Shopping Website
 
-A dynamic shopping website built using HTML, CSS and JavaScript.
+A dynamic shopping website built using HTML, CSS and JavaScript. (Browse products, view description, cart functionality and track of total amount)
 
 ## Frontend Technologies
 
