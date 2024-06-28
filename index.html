@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopperz.com Product Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Shopperz.com</h1>
+        <button id="cart-button" onclick="location.href='cart.html'">Cart</button>
+    </header>
+    <main>
+        <div id="search-and-filter">
+            <input type="text" id="search" placeholder="Search products...">
+            <select id="category" onchange="displayProducts()">
+                <option value="all">All Categories</option>
+            </select>
+        </div>
+        <h2>Best Sellers</h2>
+        <div id="products"></div>
+        <div id="pagination">
+            <button id="prevPage" onclick="changePage(-1)" disabled>Prev</button>
+            <span id="pageInfo">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
+            <button id="nextPage" onclick="changePage(1)">Next</button>
+        </div>
+    </main>
+</body>
+</html>
